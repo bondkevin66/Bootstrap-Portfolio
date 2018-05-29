@@ -13,45 +13,53 @@
 </head>
 
 <body background="assets/images/superman-symbol-wallpaper.jpg">
+  <div class="container" id="tops">
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <div class="navbar-brand">
-          <div class='brand'>Kevin Bond</div>
-        </div>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand">Kevin Bond</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+
       </div>
 
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-  <div class="container-fluid" style="max-height: 1700px;">
-     <div class="row align-items-center">
-         <div class="col-md-12">
-             <div class="page-header">
-                 <h1 class="main">Portfolio</h1>
-             </div>
-         </div>
-    </div>
-    <br>
-  <div class="container">
-  <div class="row">
+      <div class="container-fluid" id="container-bod">
+         <div class="row align-items-center">
+             <div class="col-sm-10 col-md-8 col-lg-6" id="about-bod">
+                 <div class="page-header">
+                     <h1 class="main">Portfolio</h1>
+                 </div>
+                <br>
+                 <div class="row">
 
     <div class="col-xs-12 col-sm-6 col-md-3 project">
             <div class="img-fluid">
                 <img src="assets/images/Graduation.jpg" class="img-responsive"/>
             </div>
-            <div class="caption" style="width: 90%">
+            <div class="caption">
              <span class="caption-text">Graduation</span>
            </div>
     </div>
@@ -107,6 +115,5 @@
       </div></div>
       <!--/.Copyright-->
 
-  </footer>
 
 </body>
